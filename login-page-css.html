@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <tital>sign up page</tital>
+
+        <link rel="stylesheet" type="text/css" href="login-page1">
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background-color: aqua;
+                background-size: cover;
+                background-position: center;
+                font-family: sans-serif;
+
+            }
+            .login{
+                width: 300px;
+                height: 360px;  
+                background:red;
+                color:blanchedalmond;
+                top: 50%;
+                left:50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                border-radius: 10px;
+                border-style: dotted;
+                
+            }
+
+            .img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50px;
+                position: absolute;
+                top: -50%;
+                left: calc(-50% -50%);
+
+            }
+
+            h2 {
+                  text-align: center;
+                  font-size:25px;    
+            }
+
+            .login p{
+                margin: 0;
+                padding: 0;
+            }
+            .login input{
+                width: 100%;
+                margin-bottom: 15px;
+
+            }
+            .login input[type="text"], input[type="password"] {
+                border: none;
+                border-bottom:3px solid blue;
+                background: greenyellow;
+                outline: none;
+            }
+
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="login">
+      <!--    <img src="images/nature.jpg" class="img">   -->
+            <h2>Login Here</h2>
+        <form>
+            <p> E-mail:</p><br>
+                <input type="text" name="name" placeholder="enter your name"><br><br>
+            <p> password:</p><br>
+                <input type="password" name="password" placeholder="enter your password"><br><br>
+            <p>username</p>
+                <input type="text" name="name" placeholder="enter user name"><br><br>
+             <input type="submit" value="sign up"><br><br>
+
+          <!--   <a href="#">Lost your password</a><br>
+             <a href="#" >Don't have an account?</a>   -->
+
+             
+        </form>     
+        
+        </div>
+        
+    </body>
+</html>
