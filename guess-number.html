@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+    <select id="mynumber">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+        <button id="guess">guess</button>
+    </p>
+    <script type="text/javascript">
+        document.getElementById("guess").onclick=function() {
+            let mynumber=document.getElementById("mynumber").value;
+            let gotIt = false;
+            let numberofguess=1;
+
+            while(gotIt==false)
+            {
+                let guess=Math.random();
+                guess=guess*6;
+                guess=Math.floor(guess);
+
+                if(guess==mynumber)
+                {
+                    gotIt=true;
+                    alert("Got it! It was a "+guess+" . It look me "+numberofguess+" guesses.");
+                }
+                else {
+                    numberofguess++;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
