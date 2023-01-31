@@ -1,0 +1,109 @@
+<!--   <html>
+<head>
+      <title>java-script</title>
+      <style type="text/css">
+      .comman {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          float: left;
+          margin-left: 8px;
+          margin-top: 5px;
+          margin-right: 5px;
+          margin: right 50px;
+          position: relative;
+        }
+      #first-circle {
+          background-color:red ;
+          border-style: dashed;
+          border-color: blue;
+        }
+      #second-circle {
+          background-color: blue;
+        }     
+      #third-circle {
+          background-color: brown;
+      } 
+      </style>
+
+</head>
+
+<body>
+      <div id="first-circle" class="comman"></div>
+      
+      <div id="second-circle" class="comman"></div>
+
+      <div id="third-circle" class="comman"></div>
+
+      <script type="text/javascript">
+              document.getElementById("first-circle").onclick= function(){
+                  document.getElementById("first-circle");
+              }
+                  document.getElementById("second-circle").onclick= function() {
+                      document.getElementById("second-circle").style.display="none";
+                  }
+                     document.getElementById("third-circle").onclick= function() {
+                         document.getElementById("third-circle").style.display="none";
+                     }
+      </script>
+</body>
+</html>   -->
+
+<html>
+  <head>
+       <title>java-script</title>
+
+      <style type="text/css">
+        .comman {
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+          }
+        #first {
+           background-color: red;
+        }   
+        #second {
+          background-color: #09E73C;
+          border-color: #0D1EF5;
+        }
+        #third {
+          background-color: #E70909;
+        }    
+        #four {
+          background-color:#F1AC0C;
+        }
+        </style>
+  </head>
+
+  <body>
+        <div id="first" class="comman">bharat suthar</div>
+
+        <div id="second" class="comman"></div>
+
+        <div id="third" class="comman"></div>
+        
+        <div id="four" class="comman"></div>
+
+        <script type="text/javascript">
+          document.getElementById("first").onclick= function() {
+            document.getElementById("first").innerHTML="it's ok";
+             }
+             
+             document.getElementById("second").onclick= function() {
+               document.getElementById("second").style.borderStyle="dashed";
+             }
+
+               document.getElementById("third").onclick= function() {
+                 document.getElementById("third").style.backgroundColor="#FCFC08";
+               }
+
+                  document.getElementById("four").onclick= function() {
+                    document.getElementById("four").style.borderRadius="30%";
+               }
+        </script>
+  </body>
+</html>
